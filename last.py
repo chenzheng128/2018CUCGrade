@@ -27,10 +27,7 @@ def plot_data(df2):
     bar.add("平均分", attr, v2, is_datazoom_show=True, is_datazoom_extra_show=True, mark_point=["max", "min"], mark_line=["average"])
     bar.add("最低分", attr, v3, is_datazoom_show=True, is_datazoom_extra_show=True, mark_point=["max", "min"], mark_line=["average"])
 
-    bar
     page.add(bar)
-
-    # In[11]:
 
 
     df3 = df2.sort_values(["分数差"], axis=0, ascending=[False])
@@ -43,9 +40,10 @@ def plot_data(df2):
     page.add(bar2)
 
     print("render page to 12-24-bar.html")
+
+    # 生成 html 文件
     page.render("12-24-bar.html")
 
-    # In[12]:
 
     df3.to_json("test.json")
     
