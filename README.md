@@ -9,11 +9,13 @@ import sys, matplotlib
 print('Python version ' + sys.version)
 print('Pandas version ' + pd.__version__)
 print('Matplotlib version ' + matplotlib.__version__)
+print('Pyecharts version ' + pyecharts.__version__)
 
 Python version 3.6.0 |Anaconda 4.3.1 (x86_64)| (default, Dec 23 2016, 13:19:00) 
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)]
 Pandas version 0.19.2
 Matplotlib version 2.0.0
+Pyecharts version 0.5.11
 ```
 
 # 运行方法 
